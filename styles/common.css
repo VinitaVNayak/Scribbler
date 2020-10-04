@@ -1,0 +1,71 @@
+#head{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+#heading{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin:5px;
+}
+#logo{
+    font-family: 'Montez', cursive; 
+    color:blue;
+    font-weight:100;
+    margin-top:0;
+    margin-bottom:0;
+    font-size:2em;
+}
+#subheading{
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight:30;
+    font-size:15px;
+    margin-top:0;
+    color:#404040;
+}
+button{
+    margin-top:5px;
+    background-color:blue;
+    color:white;
+    text-align:center;
+    padding:5px 22px;
+    font-weight:600;
+    font-size:14px;
+    border:2px solid silver;
+}
+#signup{
+    margin-left:auto;
+}
+
+#signin{
+    margin-left:10px;
+    margin-right:5px;
+}
+#modalsignup-btn{
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+#modalsignin-btn{
+    margin-top:30px;
+    margin-bottom:5px;
+}
+
+#footnote{
+    padding-top:20px;
+    padding-bottom:5px;
+    text-align:center;
+    font-size:90%;
+    font-weight:600;
+}
+
+.btn-lg{
+    padding-left:2rem;
+    padding-right:2rem;
+    border-radius:0;
+    font-size:1rem;
+    margin-bottom:5px;
+  }
