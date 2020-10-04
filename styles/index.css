@@ -18,7 +18,7 @@ body{
     transform: translate(-50%,-50%);
 }
 .myButton {
-	background-color:#efcc00;
+	background-color:#cfb53b;
 	border:2px solid silver;
 	display:inline-block;
 	cursor:pointer;
