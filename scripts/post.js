@@ -33,7 +33,7 @@ function enableEditMode(e, editBtn) {
     saveBtn.style.display = 'inline-block';
     
 }
-
+//fucntion to save the content that are edited
 function updateContent(e, saveBtn) {
     var subject = document.getElementById("subject");
     var desciption = document.getElementById("description");
@@ -56,7 +56,7 @@ function updateContent(e, saveBtn) {
     saveBtn.style.display = "none";
     saveBtn.classList.toggle("btn");
 }
-
+// fucntion to add comment in stack fashion like the latest comment on the top
 function addComments(e) {
     var inputComment = document.getElementById("InputComment");
     var comment = inputComment.value;
@@ -68,7 +68,7 @@ function addComments(e) {
     comments.innerHTML = '<p>' + comment + '</p>'+oldcomments;
     inputComment.value = inputComment.defaultValue;
 }
-
+//fucntion to update the number of likes for the comment 
 function updateLikes(event, likeBtn) {
     var likeCounter = Number(likeBtn.getAttribute('data-likes'));
     if (likeCounter == 0) {
