@@ -64,7 +64,8 @@ function addComments(e) {
     if (comments.style.display == '') {
         comments.style.display = 'block';
     }
-    comments.innerHTML += '<p>' + comment + '</p>';
+    oldcomments=comments.innerHTML;
+    comments.innerHTML = '<p>' + comment + '</p>'+oldcomments;
     inputComment.value = inputComment.defaultValue;
 }
 
