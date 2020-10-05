@@ -16,7 +16,7 @@ function enableEditMode(e, editBtn) {
 
     //remove .btn class
     //needed for hiding editBtn
-    //works in IE9
+   
     if (editBtn.classList) {
         editBtn.classList.remove("btn");
     } else {
@@ -31,7 +31,7 @@ function enableEditMode(e, editBtn) {
 
     var saveBtn = document.getElementById("save-btn");
     saveBtn.style.display = 'inline-block';
-    //saveBtn.classList.toggle("btn");
+    
 }
 
 function updateContent(e, saveBtn) {
@@ -45,7 +45,7 @@ function updateContent(e, saveBtn) {
     editBtn.style.display = "inline-block";
 
     //toggle 'btn' class
-    //add fix for IE9 
+    
     if (editBtn.classList) {
         editBtn.classList.toggle("btn");
     } else {
