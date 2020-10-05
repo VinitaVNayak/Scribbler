@@ -95,9 +95,9 @@
             <h5>Everything you should know about 'module' & 'require' in Node.js</h5>
         </div>
         <div id="author">
-            <p>Rusty Russell</p>
-            <button type="button" class="btn btn-danger btn-lg" id="edit-btn" onclick="EditSaveClicked()">Edit <i class="fas fa-edit"></i></button>
-           
+            <p>Srishti Gupta</p>
+            <button type="button" class="btn btn-danger btn-lg" id="edit-btn" onclick="enableEditMode(event,this)">Edit <i class="fas fa-edit"></i></button>
+            <button type="button" class="btn-danger btn-lg" id="save-btn" onclick="updateContent(event,this)">Save <i class="fas fa-save"></i></button>
         </div>
         <div id="description">
             <!-- remove this later-->
@@ -125,10 +125,11 @@
                 function is local to that function and cannot be accessed outside this function.
             </p>
         </div>
-        <button id="like-press" onclick="incLikes()"><i class="fas fa-thumbs-up"></i>
-             Like
-      </button><br>
-      <p id = "like-number-update">Be the first one to like this !!</p><br>
+        <div id="like">
+            <button type="button" class="btn btn-danger btn-lg" id="like-btn" data-likes="0" onclick="updateLikes(event,this)">Like <i
+                    class="fas fa-thumbs-up"></i></button>
+            <p id="like-info">Be the first one to like this!</p>
+        </div>
         <div id="addcomment">
             <form name="commentform" id="commentform" onsubmit="addComments(event); return false;">
                 <div class="form-group">
@@ -155,7 +156,6 @@
         crossorigin="anonymous"></script>
     <script src="../scripts/common.js"></script>
     <script src="../scripts/post.js"></script>
-    <script src="../scripts/index.js"></script>
 </body>
 
 </html>

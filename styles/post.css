@@ -13,11 +13,16 @@ body{
 
 #subject{
     flex:100%;
+    width:100%;
     align-self:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #subject > h5{
     font-weight:bold;
+    text-align: center;
 }
 
 #author{
@@ -40,6 +45,11 @@ body{
     align-self:baseline;
 }
 
+#save-btn{
+    align-self: baseline;
+    display:none;
+}
+
 #description{
     flex:100%;
     align-self:flex-start;
@@ -47,11 +57,6 @@ body{
 
 #description > p {
     font-size:90%;
-}
-#like-press
-{
-  background-color:#ef3b65;
-  width: 100px;
 }
 
 #like > p{
@@ -86,6 +91,7 @@ body{
     border:1px solid lightgrey;
     padding:1%;
     padding-bottom:0.3%;
+    display:none;
 }
 
 #comments > p {
