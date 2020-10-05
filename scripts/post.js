@@ -1,18 +1,3 @@
-var postList = [
-    {
-        "id": "card_1",
-        "author": "Colby Fayock",
-        "subject": "What is linting and how can it save your time"
-    }
-];
-
-function initUI() {
-    var postId = window.sessionStorage.getItem('postId');
-    console.log(postId);
-}
-
-//initUI();
-
 function enableEditMode(e, editBtn) {
     console.log(editBtn);
 
